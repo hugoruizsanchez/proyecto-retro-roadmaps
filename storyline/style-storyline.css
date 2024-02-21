@@ -1,0 +1,450 @@
+/* INICIO: Ajustes preliminares*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+    margin: 0;
+  }
+
+/* FIN : Ajustes preliminares*/
+
+/*Header*/
+
+	/* INICIO: Ajustes preliminares*/
+
+		/* Fuentes */
+		@font-face {
+			font-family: 'retro'; 
+			src: url('../fuentes/retro.ttf') format('truetype');
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: black;
+		}
+
+	/* FIN: Ajustes preliminares*/
+
+	/* INICIO: Logo deslizante hacia abajo */
+/* INICIO: Logo deslizante hacia abajo */
+
+		h1 {
+			/* Ajustes de fuente */ 
+			font-family: 'retro';
+			color: #00ff6a;
+			font-size: 45px;
+
+			/* Ajustes de disposición */
+			display: flex;
+			position: relative;
+			justify-content: center;
+
+			/* Ajusten de contenedor*/
+			margin-top: 80px;
+			width: 100%;
+		}
+		
+		h1:hover {
+			cursor:pointer;
+		}
+
+	/* FIN: Logo deslizante hacia abajo */
+
+	/* INICIO: Menú */
+
+		.menu {
+			/* Ajustes de disposición */
+			justify-content: center;
+			position: relative;
+			display: flex;
+			
+			/* Ajustes de contenedor*/ 
+			margin-top: 20px;
+			width: 100%;
+		}
+
+		.menu ul {
+			/* Ajustes de disposición */ 
+			display: flex;
+			flex-direction:row;
+			/* Ajustes de fuente*/ 
+			list-style: none;
+
+			/*Ajustes de contenedor*/ 
+			padding: 0;
+			margin: 0;
+		}
+
+		.menu li {
+			/*Ajustes de contenedor*/ 
+			margin-right: 20px; 
+			font-family: 'retro';
+			font-size: 20px;
+			color: white;
+			margin-bottom: 10px;
+			padding: 2px;
+			line-height: 1.5;	
+		}
+
+		.menu a {
+			/* Ajustes de fuente*/ 
+			font-family: 'retro';
+			text-decoration: none;
+
+			color: rgb(221, 56, 56); 
+		}
+
+		.menu a:hover {
+			/* Ajustes de fuente*/ 
+			color: rgb(233, 233, 233)
+		}
+
+		.menu #opcion_seleccionada {
+			color: rgb(233, 233, 233)
+		}
+	
+	
+	/* INICIO TEXTO PROGRESIVO */
+	
+		.contenedor-texto-progresivo {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	
+		.texto-progresivo {
+			
+			/* Ajustes de margen */
+			margin-top: 40px;
+			margin-bottom: 40px;
+			
+			/* Ajustes de texto */ 
+			font-family: 'retro';
+			font-size: 21px;
+			color: #8F90AB;
+			text-align: center;
+		}
+		
+		
+		
+	/* FIN TEXTO PROGRESIVO*/
+	
+
+
+
+/* INICIO: Línea de tiempo */ 
+
+  .linea_tiempo {
+    /*Ajustes de disposición*/
+    position: relative;
+    max-width: 800px;
+
+    /*Ajustes de contenedor*/
+    margin: 0 auto;
+    padding-top: 20px;
+
+    /*Ajustes de color*/
+    background-color: black;
+  }
+
+  .linea_tiempo:after {
+    /*Ajustes de contenedor*/
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -2px;
+    width: 5px;
+
+    /*Ajustes de disposición*/
+    position: absolute;
+
+    /*Ajustes de color: línea divisioria*/
+    background-color: #00ff6a;;
+
+    /*Ajustes de texto*/ 
+    content: '';
+  }
+
+  .linea_tiempo--principio:after {
+    /*Ajustes de contenedor*/
+    top: 20px;
+  }
+
+/*FIN: Línea de tiempo gentiempol */ 
+
+/* INICIO: tiempo (año)*/ 
+
+  .cuadricula_tiempo {
+    /*Ajustes de disposición*/
+    text-align: center;
+    position: relative;
+    
+    /*Ajustes de contenedor*/
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+
+  .cuadricula_tiempo__titulo {
+    /*Ajustes de color*/
+    background-color:#00ff6a;
+    color: red;
+
+    /*Ajustes de disposición*/
+    display: inline-block;
+
+    /*Ajustes de contenedor*/
+    padding: 10px 20px;
+  }
+
+/* FIN: tiempo (año) */
+
+/* INICIO: Entrada */ 
+
+  .entrada {
+    /*Ajustes de contenedor*/
+    padding: 10px 30px 40px 30px;
+    width: 50%;
+
+    /*Ajustes de disposición*/
+    position: relative;
+    background-color: inherit;
+  }
+
+  .entrada--derecha {
+    /*Ajustes de contenedor*/
+    margin-left: 50%;
+  }
+
+  .entrada__contenido {
+    /* Ajustes de contenedor*/ 
+    padding: 20px 30px;
+
+    /* Ajustes de color */ 
+    background-color:black;
+    
+    border: 5px solid rgb(0, 255, 85);
+    
+
+    /* Ajustes de disposición */ 
+    position: relative;
+  }
+
+  .entrada__contenido img {
+    /* Ajustes de contenedor*/ 
+    max-width: 100%;
+  }
+
+  .entrada:before {
+    /* Ajustes de texto */
+    content: " ";
+
+    /* Ajustes de disposicion*/ 
+    position: absolute;
+
+    /* Ajustes de contenedor*/ 
+    height: 0;    
+    top: 20px;
+    width: 0;
+    z-index: 1;
+  }
+
+  .entrada--izquierda:before {
+    /* Ajustes de contenedor*/ 
+    right: 22px;
+
+    /*Ajustes de borde*/
+    border: medium solid transparent;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #00ff6a;
+  }
+
+  .entrada--derecha:before {
+    /* Ajustes de contenedor*/ 
+    left: 22px;
+    margin-left: 0;
+
+    /*Ajustes de borde*/
+    border: medium solid transparent;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #00ff6a transparent transparent;
+  }
+
+  .entrada:after {
+    /* Ajustes de contenedor*/ 
+    width: 10px;
+    height: 10px;
+    right: -10px;
+
+    /* Ajustes de color */
+    background-color: white;
+    border: 4px solid #00ff6a;
+
+    /*Ajustes de disposición*/
+    position: absolute;
+    
+    /* Ajustes de contenedor*/
+    top: 19px;
+
+    /* Ajustes de borde*/
+    border-radius: 50%;
+
+    z-index: 1;
+    content: '';
+  }
+
+  .entrada--derecha:after {
+    /* Ajustes de contenedor*/
+    right: auto;
+    left: -9px;
+  }
+
+/* FIN: entrada*/ 
+
+h2 {
+  /* Ajustes de contenedor*/
+  margin-bottom: 0.5em;
+
+  /* Ajustes de texto*/
+  font-family:'retro','Knockout 31 4r';
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  /* Ajustes de contenedor*/
+  margin: 0.5em 0;
+
+  /* Ajustes de texto*/
+  font-family:'retro','Gotham SSm',Helvetica,Arial,sans-serif;
+  font-size: 1em;
+
+  /*Ajustes de color: titulo entrada*/
+  color: WHITE;
+
+}
+
+p {
+  /* Ajustes de texto*/ 
+  font-family: 'retro','Gotham SSm',Helvetica,Arial,sans-serif;
+  line-height: 1.4;
+  font-size: .7em;
+
+  /* Ajustes de color*/
+  color: white;
+}
+
+footer {
+	margin-top: 25px;
+	margin-bottom:25px;
+	text-align: center;
+}
+
+
+/* MEDIAS PARA EL HEADER*/ 
+	@media all and (max-width: 800px) {
+		.menu li {
+			font-size: 18px;
+		}
+	}
+	
+	@media all and (max-width: 750px) {
+		.menu li {
+			font-size: 17px;
+		}
+	}
+	
+	@media all and (max-width: 700px) {
+		.menu li {
+			font-size: 15px;
+		}
+	}
+	
+	@media all and (max-width: 650px) {
+		.menu li {
+			font-size: 13px;
+		}
+	}
+	
+	@media all and (max-width: 600px) {
+		.menu ul {
+			flex-direction:column;
+		}
+		
+		.menu li {
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+	
+	@media all and (max-width: 600px) {
+		h1 {
+			font-size: 35px;
+		}
+		
+		.texto-progresivo {
+			font-size: 19px;
+			margin-top: 5px;
+			margin-bottom: 5px; 
+		}
+	
+	}
+	
+	@media all and (max-width: 400px) {
+		h1 {
+			font-size: 24px;
+		}
+		
+		.texto-progresivo {
+			font-size: 15px;
+			margin-top: 5px;
+			margin-bottom: 5px; 
+		}
+		.menu li {
+			font-size: 15px;
+		}
+	
+	}
+	
+/* FIN MEDIAS HEADER */
+
+
+
+@media all and (max-width: 500px) {
+    .linea_tiempo:after {
+      left: 33.75px;
+    }
+  
+    .cuadricula_tiempo {
+      text-align: left;
+      padding-left: 31.875px;
+    }
+  
+    .entrada {
+      width: 100%;
+      margin-left: 0;
+      padding-left: 64px;
+      padding-right: 20px;
+    }
+  
+    .entrada:before {
+      right: auto;
+      left: 56px;
+      margin-left: 0;
+      border: medium solid transparent;
+      border-width: 8px 8px 8px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .entrada:after {
+      left: 25px;
+    }
+  }
+
+/* FIN : Pendiente: medias */ 

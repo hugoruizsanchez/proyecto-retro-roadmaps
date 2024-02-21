@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Roadmaps - Seleccionar consola</title>
+    <link rel="stylesheet" href="style-seleccionar-consola.css">
+</head>
+<body>
+	
+	<header> 
+        <h1 onclick="window.location.href='../index/index.html'"> Retro Roadmaps </h1>
+        <nav class="menu" id="menu"> 
+            <ul class="menu-ul"> 
+				<li class="opcion" id="lista_seccion_historia"> <a href="../../storyline/storyline.html"> Historia de los videojuegos </a> </li>
+                <li class="opcion" id="lista_seccion_videojuegos"> <a href="../../videojuegos/seleccionar-consola/seleccionar-consola.html"> Videojuegos </a> </li>
+                <li class="opcion" id="lista_seccion_emuladores"> <a href="#"> Emuladores </a> </li>
+                <li class="opcion" id="lista_seccion_acercade"> <a href="#"> Acerca de </a> </li>
+            </ul> 
+        </nav>
+        
+        <div class="contenedor-texto-progresivo">
+			<h3 class="texto-progresivo" id="texto-progresivo"> Selecciona una videoconsola </h3>
+        </div>
+        
+    </header>
+    
+    <main> 
+		
+		<div class="videoconsolas">
+			<a class="videoconsola" href="../genesis/menu-videojuegos.html" onmouseover="genesis.style.color='#8F90AB'" onmouseout= "genesis.style.color='white'"> 
+				<p class="nombre-consola" id="genesis"> Sega Genesis  </p>
+				<img class="imagenconsola" src="imagenes/pantalla_genesis.png">  
+			</a>
+			<a class="videoconsola" href="#" onmouseover="mastersystem.style.color='#8F90AB'; alert ('Debido a limitaciones técnicas - equipo principal estropeado - y de tiempo, solo he realizado el menú de la Sega Genesis. Sin embargo, el estilo hubiera sido el mismo para todas las consolas.')" onmouseout= "mastersystem.style.color='white'"> 
+				<p class="nombre-consola" id="mastersystem"> Sega Mastersystem  </p>
+				<img class="imagenconsola" src="imagenes/pantalla_mastersystem.png">  
+			</a>
+			
+			<a class="videoconsola" href="#"  onmouseover="nes.style.color='#8F90AB'; alert ('Debido a limitaciones técnicas - equipo principal estropeado - y de tiempo, solo he realizado el menú de la Sega Genesis. Sin embargo, el estilo hubiera sido el mismo para todas las consolas.')" onmouseout= "nes.style.color='white'"> 
+				<p class="nombre-consola" id="nes"> NES </p>
+				<img class="imagenconsola" src="imagenes/pantalla_nes.png">  
+			</a>
+			
+			<a class="videoconsola" href="#"  onmouseover="snes.style.color='#8F90AB'; alert ('Debido a limitaciones técnicas - equipo principal estropeado - y de tiempo, solo he realizado el menú de la Sega Genesis. Sin embargo, el estilo hubiera sido el mismo para todas las consolas.')" onmouseout= "snes.style.color='white'"> 
+				<p class="nombre-consola" id="snes"> Super NES </p>
+				<img class="imagenconsola" src="imagenes/pantalla_snes.png">  
+			</a>
+			
+			<a class="videoconsola" href="#"  onmouseover="n64.style.color='#8F90AB'; alert ('Debido a limitaciones técnicas - equipo principal estropeado - y de tiempo, solo he realizado el menú de la Sega Genesis. Sin embargo, el estilo hubiera sido el mismo para todas las consolas.')" onmouseout= "n64.style.color='white'"> 
+				<p class="nombre-consola" id="n64"> Nintendo 64 </p>
+				<img class="imagenconsola" src="imagenes/pantalla_n64.png">  
+			</a>
+			
+			<a class="videoconsola" href="#"  onmouseover="ps1.style.color='#8F90AB'" onmouseout= "ps1.style.color='white'"> 
+				<p class="nombre-consola" id="ps1"> Play Station 1 </p>
+				<img class="imagenconsola" src="imagenes/pantalla_psx.png">  
+			</a>
+			
+		</div>
+		
+		
+    
+    </main>
+    
+    
+    <footer> 
+        <p>  © Copyright "Retro Roadmaps", es una marca registrada y tiene derechos reservados ~ 2024 </p>
+    </footer>
+    <script src="../animacionesVideojuegos.js"></script>
+</body>

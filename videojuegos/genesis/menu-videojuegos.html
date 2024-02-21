@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Roadmaps - Sega Megadrive - Videojuegos</title>
+    <link rel="stylesheet" href="../style-videojuegos.css">
+    
+</head>
+<body>
+
+    <header> 
+        <h1 onclick="window.location.href='../index/index.html'"> Retro Roadmaps </h1>
+        <nav class="menu" id="menu"> 
+            <ul> 
+				<li class="opcion" id="lista_seccion_historia"> <a href="../../storyline/storyline.html"> Historia de los videojuegos </a> </li>
+                <li class="opcion" id="lista_seccion_videojuegos"> <a href="../../videojuegos/seleccionar-consola/seleccionar-consola.html"> Videojuegos </a> </li>
+                <li class="opcion" id="lista_seccion_emuladores"> <a href="#"> Emuladores </a> </li>
+                <li class="opcion" id="lista_seccion_acercade"> <a href="#"> Acerca de </a> </li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main> 
+        <h2 class="texto-progresivo" id="texto-progresivo"> Los mejores títulos para la... </h2>
+        <img id="imagen_logo" class="imagen_logo" src="logo-megadrive.png">
+
+		<!-- La id de cada videojuego es indispensable para la correcta integración de las imagenes y debe corresponder con la de su carpeta -->
+		
+        <div class="videojuego" id="sonic1">
+            <div class="posicion"> 01 </div>
+            <p class="titulo-juego"> Sonic the Hedgehog </p>
+            <p class="descripcion-general-juego"> El emblema de Sega, su juego más vendido </p>
+    
+            <div class="panel-imagen"> 
+                <button class="imagenanterior botonpanel"> <img src="../flecha_rotada_izquierda.png"> </button>
+                <img class="modelo" onmouseover="idElemento(this)" id="sonic1_cartucho" src="../../modelos/genesis/sonic1_cartucho/sonic1_cartucho-0.jpg"> 
+                <img class="imagencambiante" src="imagenes/sonic1/imagen-sonic1-0.jpg">
+                <button class="imagenposterior botonpanel"> <img src="../flecha_rotada_derecha.png"></button>
+            </div>
+            
+            <div class="informacion">
+               
+                <ul>
+                    <li> <b>Título original:</b> Sonic the Hedgehog 1 </li>
+                    <li> <b>Género:</b> Plataformas </li>
+                    <li> <b>Año de salida:</b> 1998 </li>
+                    <li> <b>Descripción:</b> ¡igue las aventuras del intrépido y veloz erizo azul, Sonic, mientras corre a través de niveles llenos de obstáculos y enemigos! </li>
+                    <li> <b>Publisher:</b> SEGA </li>
+                </ul>
+            </div>
+            <div class="descargas"> 
+                <div class="enlace"> Descargar manual en PDF </div>
+            </div>
+        </div>  
+        
+        <!-------------------------------------------------> 
+
+        <div class="videojuego" id="castlevania">
+            <div class="posicion"> 02 </div>
+            <p class="titulo-juego"> Castlevania Bloodlines </p>
+            <p class="descripcion-general-juego"> La resurrección de la saga, con la potencia de 16 bits. </p>
+    
+            <div class="panel-imagen"> 
+                <button class="imagenanterior botonpanel"> <img src="../flecha_rotada_izquierda.png"> </button>
+                <img class="modelo" onmouseover="idElemento(this)" id="castlevania_cartucho" src="../../modelos/genesis/castlevania_cartucho/castlevania_cartucho-0.jpg"> 
+                <img class="imagencambiante" src="imagenes/castlevania/imagen-castlevania-0.jpg">
+                <button class="imagenposterior botonpanel"> <img src="../flecha_rotada_derecha.png"></button>
+            </div>
+            
+            <div class="informacion">
+               
+                <ul>
+                    <li> <b>Título original:</b> Castlevania Bloodlines  </li>
+                    <li> <b>Género:</b> Plataformas </li>
+                    <li> <b>Año de salida:</b> 1994 </li>
+                    <li> <b>Descripción:</b> Dos cazadores de vampiros, John Morris y Eric Lecarde, mientras se aventuran en el castillo del malvado Conde Drácula</li>
+                    <li> <b>Publisher:</b> KONAMI</li>
+                </ul>
+            </div>
+            <div class="descargas"> 
+                <div class="enlace"> Descargar manual en PDF </div>
+            </div>
+        </div> 
+        
+        <!-------------------------------------------------> 
+        
+        <div class="videojuego" id="alteredbeast">
+            <div class="posicion"> 03 </div>
+            <p class="titulo-juego"> Altered Beast </p>
+            <p class="descripcion-general-juego"> Un clásico en acción y aventura. </p>
+    
+            <div class="panel-imagen"> 
+                <button class="imagenanterior botonpanel"> <img src="../flecha_rotada_izquierda.png"> </button>
+                <img class="modelo" onmouseover="idElemento(this)" id="alteredbeast_cartucho" src="../../modelos/genesis/alteredbeast_cartucho/alteredbeast_cartucho-0.jpg"> 
+                <img class="imagencambiante" src="imagenes/alteredbeast/imagen-alteredbeast-0.jpg">
+                <button class="imagenposterior botonpanel"> <img src="../flecha_rotada_derecha.png"></button>
+            </div>
+            
+            <div class="informacion">
+               
+                <ul>
+                    <li> <b>Título original:</b> Altered Beast </li>
+                    <li> <b>Género:</b> Plataformas </li>
+                    <li> <b>Año de salida:</b> 1999 </li>
+                    <li> <b>Descripción:</b> Un guerrero resucitado por Zeus, el dios griego, con el objetivo de rescatar a su hija, Athena, de las garras del malvado Neff</li>
+                    <li> <b>Publisher:</b> SEGA </li>
+                </ul>
+            </div>
+            <div class="descargas"> 
+                <div class="enlace"> Descargar manual en PDF </div>
+            </div>
+        </div>   
+        
+        <!-------------------------------------------------> 
+        
+        <div class="videojuego" id="mortalkombat">
+            <div class="posicion"> 04 </div>
+            <p class="titulo-juego"> Mortal Kombat </p>
+            <p class="descripcion-general-juego"> Peleas multijugador con sprites pseudo-realistas </p>
+    
+            <div class="panel-imagen"> 
+                <button class="imagenanterior botonpanel"> <img src="../flecha_rotada_izquierda.png"> </button>
+                <img class="modelo" onmouseover="idElemento(this)" id="mortalkombat_cartucho" src="../../modelos/genesis/mortalkombat_cartucho/mortalkombat_cartucho-0.jpg"> 
+                <img class="imagencambiante" src="imagenes/mortalkombat/imagen-mortalkombat-0.jpg">
+                <button class="imagenposterior botonpanel"> <img src="../flecha_rotada_derecha.png"></button>
+            </div>
+            
+            <div class="informacion">
+               
+                <ul>
+                    <li> <b>Título original:</b> Mortal Kombat</li>
+                    <li> <b>Género:</b> Combate / Pelea </li>
+                    <li> <b>Año de salida:</b> 1993 </li>
+                    <li> <b>Descripción:</b> Lucha brutal y su violencia gráfica, que incluye movimientos especiales sangrientos y fatalities impactantes</li>
+                    <li> <b>Publisher:</b> Midway Games</li>
+                </ul>
+            </div>
+            <div class="descargas"> 
+                <div class="enlace"> Descargar manual en PDF </div>
+            </div>
+        </div>   
+        
+        <!-------------------------------------------------> 
+        
+        <div class="videojuego" id="goldenaxe">
+            <div class="posicion"> 05 </div>
+            <p class="titulo-juego"> Golden Axe I </p>
+            <p class="descripcion-general-juego"> ¡De la recreativa original, a tu casa! </p>
+    
+            <div class="panel-imagen"> 
+                <button class="imagenanterior botonpanel"> <img src="../flecha_rotada_izquierda.png"> </button>
+                <img class="modelo" onmouseover="idElemento(this)" id="goldenaxe_cartucho" src="../../modelos/genesis/goldenaxe_cartucho/goldenaxe_cartucho-0.jpg"> 
+                <img class="imagencambiante" src="imagenes/goldenaxe/imagen-goldenaxe-0.jpg">
+                <button class="imagenposterior botonpanel"> <img src="../flecha_rotada_derecha.png"></button>
+            </div>
+            
+            <div class="informacion">
+               
+                <ul>
+                    <li> <b>Título original:</b> Golden Axe I </li>
+                    <li> <b>Género:</b> Beaten up </li>
+                    <li> <b>Año de salida:</b> 1999 </li>
+                    <li> <b>Descripción:</b> Elige tu personaje: tu misión es derrotar al malvado Death Adder y rescatar a la princesa secuestrada.</li>
+                    <li> <b>Publisher:</b> SEGA </li>
+                </ul>
+            </div>
+            <div class="descargas"> 
+                <div class="enlace"> Descargar manual en PDF </div>
+            </div>
+
+            
+        </div>   
+
+        
+        
+
+    </main>
+
+    <footer> 
+        <p>  © Copyright "Retro Roadmaps", es una marca registrada y tiene derechos reservados ~ 2024 </p>
+    </footer>
+    
+    <script src="controlCartuchos.js"></script>
+    <script src="controlCaratulas.js"></script>
+    <script src="../animacionesVideojuegos.js"></script>
+</body>
+</html>
